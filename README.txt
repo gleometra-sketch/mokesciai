@@ -9,3 +9,5 @@ MOKESČIŲ ASISTENTAS – atskira versija (be Claude)
 5) Gmail importas ir „Rasti laišką“ šioje versijoje paslėpti (jiems reikia Claude).
 
 GOOGLE (Gmail importas): Google Cloud Console -> projektas -> Gmail API ijungtas -> OAuth consent (Testing) + jusu el. pastas kaip Test user -> Credentials -> OAuth client ID (Web) -> Authorized JavaScript origins: jusu https://...pages.dev adresas.
+
+SUPABASE: 1) SQL Editor -> supabase-setup.sql; 2) Authentication -> Email Templates (Confirm signup ir Magic Link) turi turėti {{ .Token }}; 3) programoje: Daugiau -> Sinchronizacija -> prisijungti el. pašto kodu; 4) po pirmo prisijungimo išjunkite naujų vartotojų registraciją (Authentication -> Sign In / Providers).
